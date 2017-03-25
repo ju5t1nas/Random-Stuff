@@ -15,6 +15,7 @@ def maxIndexes(Matrix):
     Matrix = array(Matrix)
     #We obtain an array of indexes. We don't like it's format, so we will transform it into a list.
     #If we just wanted an answer in the form of an array, then we could simply return indexArray.
+    #We could find min values by changing .max() with .min()
     indexArray = asarray(where(Matrix == Matrix.max())).T
     #We create the list of indexes that we will later return
     indexes = []
